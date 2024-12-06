@@ -12,9 +12,9 @@ namespace Middleware.Pages
             _logger = logger;
         }
 
-        public IActionResult OnGet()
+        public void OnGet()
         {
-            return RedirectToPage("./Privacy");
+            ViewData["Message"] = "hello github";
         }
     }
 }
