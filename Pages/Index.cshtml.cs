@@ -11,11 +11,12 @@ namespace Middleware.Pages
         {
             _logger = logger;
         }
-
+        public string s;
         public void OnGet()
         {
             ViewData["Message"] = "hello github";
             ViewData["date"] = DateTime.Now.ToString();
+             s = "ali";
         }
     }
 }
